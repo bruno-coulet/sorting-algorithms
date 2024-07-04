@@ -95,7 +95,7 @@ if __name__ == "__main__":
         # fig, ax = plt.subplots(figsize=(12, 6))
 
         colors = [cmap(norm(value)) for value in sorted_list]
-        plt.title(f"{method_name} from {length} random values ​​between 0 and 1000 inclusive {elapsed_time:.3f} ms.", color='white')
+        # plt.title(f"{method_name} from {length} random values ​​between 0 and 1000 inclusive {elapsed_time:.3f} ms.", color='white')
 # --------------------------------------------------------------------------------------------------        
         # STATIC VERSION
         # plt.pie(sorted_list, startangle=140, colors=colors)
@@ -124,7 +124,8 @@ if __name__ == "__main__":
         plt.legend(handles=legend_patches, loc='upper right', bbox_to_anchor=(1.2, 0.75), facecolor='black', edgecolor='white', fontsize=12, labelcolor='white')
 
 # --------------------------------------------------------------------------------------------------
-
+        # Saves the plot into the project folder
+        # plt.savefig('pie_chart.png', transparent=True)
 
         plt.show()
 
